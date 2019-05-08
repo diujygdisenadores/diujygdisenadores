@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <title>Bootstrap Example</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+  <link href="./css/style.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+  <script src="./js/collapseBehaviour.js"></script>
+  <script src="./js/searchBehaviour.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+</head>
+<body>
+
+  <nav class="navbar navbar-expand-lg navbar-light bg-light" id="barraNavegacion">
+    <a class="navbar-brand" href="./index.html">Agenda UGR</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <i class="fas fa-bars"></i>
+    </button>
+
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav mr-auto">
+      </ul>
+      <a class="btn btn-default btn-circle" alt="Inicio de sesión" href="./login.html"><i class="fas fa-user"></i></a>
+    </div>
+  </nav>
+
+
+
+
+
+    <div class="container">
+
+          <h1 class="thick-heading">
+            Eventos próximos
+          </h1>
+
+          <!-- First Featurette -->
+          <div class="featurette" id="about">
+            <div class="agenda">
+                <div class="table-responsive">
+                    <table class="table table-condensed table-bordered">
+                        <thead>
+                            <tr>
+                                <th>Fecha</th>
+                                <th>Hora</th>
+                                <th>Evento</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <!-- Single event in a single day -->
+                            <tr>
+                                <td class="agenda-date" class="active" rowspan="1">
+                                    <div class="dayofmonth">26</div>
+                                    <div class="dayofweek">Sábado</div>
+                                    <div class="shortdate text-muted">Julio, 2014</div>
+                                </td>
+                                <td class="agenda-time">
+                                    5:30
+                                </td>
+                                <td class="agenda-events">
+                                    <div class="agenda-event">
+                                        <i class="glyphicon glyphicon-repeat text-muted" title="Repeating event"></i>  Pesca
+                                    </div>
+                                </td>
+                            </tr>
+
+                            <!-- Multiple events in a single day (note the rowspan) -->
+                            <tr>
+                                <td class="agenda-date" class="active" rowspan="3">
+                                    <div class="dayofmonth">24</div>
+                                    <div class="dayofweek">Jueves</div>
+                                    <div class="shortdate text-muted">Julio, 2014</div>
+                                </td>
+                                <td class="agenda-time">
+                                    8:00 - 9:00
+                                </td>
+                                <td class="agenda-events">
+                                    <div class="agenda-event">
+                                        Desayuno con compañeros
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="agenda-time">
+                                    10:15 - 12:00
+                                </td>
+                                <td class="agenda-events">
+                                    <div class="agenda-event">
+                                        Charla sobre Bootstrap
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="agenda-time">
+                                    19:00 - 21:00 
+                                </td>
+                                <td class="agenda-events">
+                                    <div class="agenda-event">
+                                        Conferencia de HTML5
+                                    </div>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+          </div>
+        </div>
+
+    
+          <div class="container">
+            <h1 class="thick-heading">
+              Búsqueda
+            </h1>
+            <div id="botones">
+              <form class="form-inline">
+                <div class="form-group mx-sm-3 mb-2">
+                  <label for="inputTexto" class="sr-only">Texto</label>
+                  <input type="text" class="form-control" id="inputTexto" placeholder="Texto">
+                </div>
+                <button class="dropdown-toggle btn btn-outline-secondary" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                  Etiquetas
+                </button>
+                <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                  <a class="dropdown-item" href="#">Una Etiqueta</a>
+                  <a class="dropdown-item" href="#">Otra Etiqueta</a>
+                  <div class="dropdown-divider"></div>
+                  <a class="dropdown-item" href="#">Ninguna</a>
+                </div>
+                <button id="avanzado" type="button" class="btn btn-outline-secondary">Avanzado</button>
+                <div id="opcionesAvanzadas"class="form-group mx-sm-3 mb-2">
+                  <label for="inputFecha" class="sr-only">Fecha</label>
+                  <input type="date" class="form-control" id="inputFecha" placeholder="Fecha">
+                  <label for="inputPrecio" class="sr-only">Precio</label>
+                  <input type="number" class="form-control" id="inputPrecio" placeholder="Precio">
+                  <label for="inputLugar" class="sr-only">Lugar</label>
+                  <input type="text" class="form-control" id="inputLugar" placeholder="Lugar">
+                </div>
+              </form>
+            </div>
+          </div>
+
+          <div class="container">
+            <h1 class="thick-heading">
+              Eventos
+            </h1>
+            <div id="eventos">
+              <div class="card card-inverse card-info" id="Pesca">
+                  <div class="card-block">
+                    <img class="card-img-top" src="./img/evento.jpg" alt="Imagen del evento">
+                      <h4 class="card-title">Pesca</h4>
+                      <div class="card-text">
+                          Lorem Rajoy Ipsum los vecinos el alcalde y es el alcalde el que quiere que sean viva el vino. A veces es mejor estar quieto y en otras no y mucho españoles y es el alcalde el que quiere que sean viva el vino A veces moverse es bueno, otras veces no y cuanto peor para todos mejor ¿Ustedes piensan antes de hablar o hablan tras pensar? ¿Ustedes piensan antes de hablar o hablan tras pensar? una cosa es ser solidario y otra es serlo a cambio de nada. Y es el alcalde el que quiere que sean como ustedes comprenderán exportar es positivo porque vendes lo que produces it's very difficult todo esto somos sentimientos y tenemos seres humanos los chuches viva el vino y cuanto peor para todos mejor. ¿Y la europea? no fue cosa menor viva el vino los españoles son muy españoles ¿Y la europea? fin de la cita ¿Y la europea?. Como decía Galileo, el movimiento siempre se acelera cuando se va detener esto no es como el agua que cae del cielo sin que se sepa exactamente por qué ¿eh? no fue cosa menor una cosa es ser solidario y otra es serlo a cambio de nada luego ya veremos muy españoles y mucho españoles muy españoles y mucho españoles. Como ustedes comprenderán viva el vino somos sentimientos y tenemos seres humanos grave afrenta a la estabilidad de los catalanes hacen cosas lo he escrito aquí y no entiendo mi letra ¿Y la europea? viva el vino fin de la cita. Los vecinos el alcalde lo he escrito aquí y no entiendo mi letra ¿eh? esto no es como el agua que cae del cielo sin que se sepa exactamente por qué ¿eh? mucho españoles salvo algunas cosas no es cosa menor, dicho de otra manera, es cosa mayor lo he escrito aquí y no entiendo mi letra. Somos sentimientos y tenemos seres humanos los catalanes hacen cosas viva el vino muy españoles y mucho españoles lo más importante que se puede hacer por vosotros es lo que vosotros podáis hacer por nosotros es el vecino el que elije al alcalde no fue cosa menor y es el alcalde el que quiere que sean.
+                      </div>
+                  
+                  <div class="card-footer">
+                      <button type="button" class="btn btn-secondary" id="card-button">Ir</button>
+                  </div>
+              </div>
+              <div class="card card-inverse card-info" id="Desayuno con compañeros">
+                  <img class="card-img-top" src="./img/evento.jpg" alt="Imagen del evento">
+                      <h4 class="card-title">Desayuno con compañeros</h4>
+                      <div class="card-text">
+                          Lorem Rajoy Ipsum los vecinos el alcalde y es el alcalde el que quiere que sean viva el vino. A veces es mejor estar quieto y en otras no y mucho españoles y es el alcalde el que quiere que sean viva el vino A veces moverse es bueno, otras veces no y cuanto peor para todos mejor ¿Ustedes piensan antes de hablar o hablan tras pensar? ¿Ustedes piensan antes de hablar o hablan tras pensar? una cosa es ser solidario y otra es serlo a cambio de nada. Y es el alcalde el que quiere que sean como ustedes comprenderán exportar es positivo porque vendes lo que produces it's very difficult todo esto somos sentimientos y tenemos seres humanos los chuches viva el vino y cuanto peor para todos mejor. ¿Y la europea? no fue cosa menor viva el vino los españoles son muy españoles ¿Y la europea? fin de la cita ¿Y la europea?. Como decía Galileo, el movimiento siempre se acelera cuando se va detener esto no es como el agua que cae del cielo sin que se sepa exactamente por qué ¿eh? no fue cosa menor una cosa es ser solidario y otra es serlo a cambio de nada luego ya veremos muy españoles y mucho españoles muy españoles y mucho españoles. Como ustedes comprenderán viva el vino somos sentimientos y tenemos seres humanos grave afrenta a la estabilidad de los catalanes hacen cosas lo he escrito aquí y no entiendo mi letra ¿Y la europea? viva el vino fin de la cita. Los vecinos el alcalde lo he escrito aquí y no entiendo mi letra ¿eh? esto no es como el agua que cae del cielo sin que se sepa exactamente por qué ¿eh? mucho españoles salvo algunas cosas no es cosa menor, dicho de otra manera, es cosa mayor lo he escrito aquí y no entiendo mi letra. Somos sentimientos y tenemos seres humanos los catalanes hacen cosas viva el vino muy españoles y mucho españoles lo más importante que se puede hacer por vosotros es lo que vosotros podáis hacer por nosotros es el vecino el que elije al alcalde no fue cosa menor y es el alcalde el que quiere que sean.
+                      </div>
+                  
+                  <div class="card-footer">
+                      <button type="button" class="btn btn-secondary" id="card-button">Ir</button>
+                  </div>
+              </div>
+              <div class="card card-inverse card-info" id="Charla sobre Bootstrap">
+                  <img class="card-img-top" src="./img/evento.jpg" alt="Imagen del evento">
+                      <h4 class="card-title">Charla sobre Bootstrap</h4>
+                      <div class="card-text">
+                          Lorem Rajoy Ipsum los vecinos el alcalde y es el alcalde el que quiere que sean viva el vino. A veces es mejor estar quieto y en otras no y mucho españoles y es el alcalde el que quiere que sean viva el vino A veces moverse es bueno, otras veces no y cuanto peor para todos mejor ¿Ustedes piensan antes de hablar o hablan tras pensar? ¿Ustedes piensan antes de hablar o hablan tras pensar? una cosa es ser solidario y otra es serlo a cambio de nada. Y es el alcalde el que quiere que sean como ustedes comprenderán exportar es positivo porque vendes lo que produces it's very difficult todo esto somos sentimientos y tenemos seres humanos los chuches viva el vino y cuanto peor para todos mejor. ¿Y la europea? no fue cosa menor viva el vino los españoles son muy españoles ¿Y la europea? fin de la cita ¿Y la europea?. Como decía Galileo, el movimiento siempre se acelera cuando se va detener esto no es como el agua que cae del cielo sin que se sepa exactamente por qué ¿eh? no fue cosa menor una cosa es ser solidario y otra es serlo a cambio de nada luego ya veremos muy españoles y mucho españoles muy españoles y mucho españoles. Como ustedes comprenderán viva el vino somos sentimientos y tenemos seres humanos grave afrenta a la estabilidad de los catalanes hacen cosas lo he escrito aquí y no entiendo mi letra ¿Y la europea? viva el vino fin de la cita. Los vecinos el alcalde lo he escrito aquí y no entiendo mi letra ¿eh? esto no es como el agua que cae del cielo sin que se sepa exactamente por qué ¿eh? mucho españoles salvo algunas cosas no es cosa menor, dicho de otra manera, es cosa mayor lo he escrito aquí y no entiendo mi letra. Somos sentimientos y tenemos seres humanos los catalanes hacen cosas viva el vino muy españoles y mucho españoles lo más importante que se puede hacer por vosotros es lo que vosotros podáis hacer por nosotros es el vecino el que elije al alcalde no fue cosa menor y es el alcalde el que quiere que sean.
+                      </div>
+                  
+                  <div class="card-footer">
+                      <button type="button" class="btn btn-secondary" id="card-button">Ir</button>
+                  </div>
+              </div>
+              <div class="card card-inverse card-info" id="Conferencia de HTML5">
+                  <img class="card-img-top" src="./img/evento.jpg" alt="Imagen del evento">
+                      <h4 class="card-title">Conferencia de HTML5</h4>
+                      <div class="card-text">
+                          Lorem Rajoy Ipsum los vecinos el alcalde y es el alcalde el que quiere que sean viva el vino. A veces es mejor estar quieto y en otras no y mucho españoles y es el alcalde el que quiere que sean viva el vino A veces moverse es bueno, otras veces no y cuanto peor para todos mejor ¿Ustedes piensan antes de hablar o hablan tras pensar? ¿Ustedes piensan antes de hablar o hablan tras pensar? una cosa es ser solidario y otra es serlo a cambio de nada. Y es el alcalde el que quiere que sean como ustedes comprenderán exportar es positivo porque vendes lo que produces it's very difficult todo esto somos sentimientos y tenemos seres humanos los chuches viva el vino y cuanto peor para todos mejor. ¿Y la europea? no fue cosa menor viva el vino los españoles son muy españoles ¿Y la europea? fin de la cita ¿Y la europea?. Como decía Galileo, el movimiento siempre se acelera cuando se va detener esto no es como el agua que cae del cielo sin que se sepa exactamente por qué ¿eh? no fue cosa menor una cosa es ser solidario y otra es serlo a cambio de nada luego ya veremos muy españoles y mucho españoles muy españoles y mucho españoles. Como ustedes comprenderán viva el vino somos sentimientos y tenemos seres humanos grave afrenta a la estabilidad de los catalanes hacen cosas lo he escrito aquí y no entiendo mi letra ¿Y la europea? viva el vino fin de la cita. Los vecinos el alcalde lo he escrito aquí y no entiendo mi letra ¿eh? esto no es como el agua que cae del cielo sin que se sepa exactamente por qué ¿eh? mucho españoles salvo algunas cosas no es cosa menor, dicho de otra manera, es cosa mayor lo he escrito aquí y no entiendo mi letra. Somos sentimientos y tenemos seres humanos los catalanes hacen cosas viva el vino muy españoles y mucho españoles lo más importante que se puede hacer por vosotros es lo que vosotros podáis hacer por nosotros es el vecino el que elije al alcalde no fue cosa menor y es el alcalde el que quiere que sean.
+                      </div>
+                  <div class="card-footer">
+                      <button type="button" class="btn btn-secondary" id="card-button">Ir</button>
+                  </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+          <div class="footer" id="footer">
+              <div class="row" id="company">
+                <p>
+                    J&G Diseñadores
+                </p>
+              </div>
+              <div class="form-group mx-sm-4 mb-2" id="company">
+                <p>
+                  <a id="footer-item" href="#">Contáctanos</a>
+                  <a id="footer-item" href="#">Quiénes somos</a>
+                  <a id="footer-item" href="#">Acerca de</a>
+                  <a id="footer-item" href="#">Preguntas frecuentes</a>
+                </p>
+              </div>
+            
+          </div>
+
+
+
+  </body>
+</html>

@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <title>Bootstrap Example</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+  <link href="./css/style.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+</head>
+<body>
+
+  <nav class="navbar navbar-expand-lg navbar-light bg-light" id="barraNavegacion">
+    <a class="navbar-brand" href="./index.html">Agenda UGR</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <i class="fas fa-bars"></i>
+    </button>
+
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav mr-auto">
+      </ul>
+      <a class="btn btn-default btn-circle" alt="Inicio de sesión" href="./login.html"><i class="fas fa-user"></i></a>
+    </div>
+  </nav>
+
+    <div class="container h-100">
+    <div class="d-flex justify-content-center h-100">
+      <div class="user_card">
+        <div class="d-flex justify-content-center form_container">
+          <form action="./profile.html" name="formulario" id="formulario">
+            <div class="input-group mb-3">
+              <div class="input-group-append">
+                <span class="input-group-text"><i class="fas fa-user"></i></span>
+              </div>
+              <input type="text" name="" class="form-control input_user" value="" placeholder="username" required>
+            </div>
+            <div class="input-group mb-2">
+              <div class="input-group-append">
+                <span class="input-group-text"><i class="fas fa-key"></i></span>
+              </div>
+              <input type="password" name="" class="form-control input_pass" value="" placeholder="password" required>
+            </div>
+            <div class="form-group">
+              <div class="custom-control custom-checkbox">
+                <input type="checkbox" class="custom-control-input" id="customControlInline">
+                <label class="custom-control-label" for="customControlInline">Remember me</label>
+              </div>
+            </div>
+          </form>
+        </div>
+        <div class="d-flex justify-content-center mt-3 login_container">
+          <button type="submit" name="button" class="btn btn-outline-secondary" form="formulario">Login</button>
+        </div>
+        <div class="mt-4">
+          <div class="d-flex justify-content-center links">
+            Don't have an account? <a href="#" class="ml-2">Sign Up</a>
+          </div>
+          <div class="d-flex justify-content-center links">
+            <a href="#">Forgot your password?</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+
+          <div class="footer" id="footer">
+              <div class="row" id="company">
+                <p>
+                    J&G Diseñadores
+                </p>
+              </div>
+              <div class="form-group mx-sm-4 mb-2" id="company">
+                <p>
+                  <a id="footer-item" href="#">Contáctanos</a>
+                  <a id="footer-item" href="#">Quiénes somos</a>
+                  <a id="footer-item" href="#">Acerca de</a>
+                  <a id="footer-item" href="#">Preguntas frecuentes</a>
+                </p>
+              </div>
+            
+          </div>
+
+  </body>
+</html>

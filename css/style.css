@@ -1,0 +1,191 @@
+body{
+  background-color: #e9ecef;
+}
+
+div#botones {
+  text-align: center;
+  padding: 1%;
+  border-style: none;
+}
+
+button, #navbarDropdown{
+  margin-bottom: .5rem!important;
+  margin-right: 1rem!important;
+}
+
+.mb-2, .my-2 {
+    margin-bottom: .5rem!important;
+}
+
+.form-inline{
+    margin: 0 auto;
+    width:50%;
+}
+
+.container{
+  list-style-type: none;
+  border-style: outset;
+  border: 2px solid rgb(226, 231, 235);
+  border-radius: 5px;
+  background: #FCFCFC;
+  padding: 2rem 2.5rem;
+  margin-top: .5rem;
+  margin-bottom: .5rem;
+}
+
+.collapseContent {
+  width: 99%;
+  padding-right: 1%;
+  display: none;
+  overflow: hidden;
+  background-color: #F1F3F6;
+}
+#opcionesAvanzadas{
+  display: none;
+  cursor: auto;
+}
+
+.navbar-brand{
+  margin-left: 1rem;
+}
+
+#barraNavegacion{
+  background-color: #788b91!important;
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+}
+
+#navbarSupportedContent{
+  background-color: #788b91;
+  text-align: right;
+  border-style: none;
+}
+
+.navbar-light .navbar-brand {
+  color: rgba(255,255,255,.9);
+}
+
+.fas.fa-user{
+  color: #CFD8DC;
+  margin-top: .4rem;
+}
+
+
+.btn-circle {
+  width: 3rem;
+  height: 3rem;
+  padding: 0.5rem 0rem;
+  border-radius: 30px;
+  text-align: center;
+  font-size: 1rem;
+  line-height: 1.42857;
+}
+.btn-default {
+    color: #333;
+    background-color: #fff;
+    border-color: #ccc;
+    margin-right: 1rem;
+}
+
+.fas.fa-bars{
+  color: #fff;
+}
+
+.navbar-light .navbar-toggler {
+  margin-top: 0.5rem;
+  color: transparent;
+  border-color: transparent;
+}
+
+#piePagina{
+  text-align: center;
+}
+
+div.footer-copyright{
+  text-align: center;
+}
+
+#company{
+  text-align: center;
+  display:block!important;
+}
+
+#company > p{
+  margin: auto;
+  color: #fff;
+}
+
+.row{
+  font-size: 2rem;
+}
+
+#footer-item{
+  display:inline;
+  text-align: center;
+  padding: 1%;
+  color: #fff;
+
+}
+
+#footer{
+  min-height: 100%;
+  position: relative;
+  background-color: #788b91;
+  padding: 2%;
+  margin-top: 2%; 
+}
+h1{
+  margin-bottom: 1rem;
+}
+img{
+  margin:2rem;
+  object-fit: contain;
+}
+
+h4{
+  text-align: center;
+}
+
+h5{
+  margin-top: .5rem;
+}
+
+.card{
+  position: inherit;
+  margin: 2rem;
+}
+
+.card-body {
+  padding: 1.25rem;
+}
+
+.card-block{
+  text-align: center;
+}
+
+.card-text{
+  margin:2rem;
+  text-align: justify;
+}
+.card-text:last-child {
+  margin-bottom: 2rem;
+}
+
+#card-button{
+  float: right;
+}
+
+.card-img-top {
+    padding-right: 4rem;
+    object-fit: contain;
+}
+
+div#calendario.featurette{
+  width: 70%;
+  margin-left: 37%;
+}
+
+#contenedorCalendario{
+  text-align: center;
+}
