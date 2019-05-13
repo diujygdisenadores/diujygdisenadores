@@ -153,7 +153,6 @@ h5{
 
 .card{
   position: inherit;
-  margin: 2rem;
 }
 
 .card-body {
@@ -236,6 +235,9 @@ div#calendario.featurette{
     margin: 0 auto;
     width: 70%;
     background-color: #FFFFFF;
-      border-radius: 6px;
+    border-radius: 6px;
     box-shadow: 0 1px 2px #C3C3C3;
+}
+.eventos-relacionados{
+  width: 15%;
 }
