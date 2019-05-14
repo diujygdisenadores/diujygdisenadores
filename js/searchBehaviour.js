@@ -6,7 +6,7 @@ var precios = [5, 3, 0, 0];
 var etiqueta = ["Deporte", "Comunidad", "Comunidad", "Comunidad"];
 var lugar = ["Pantano de Cubillas", "ETSIIT", "ETSIIT", "ETSIIT"];
 var meses = ["Enero", "Febrero", "Marzo", "Abril", "Mayo", "Junio", "Julio", "Agosto", "Septiembre", "Octubre", "Noviembre", "Diciembre"];
-var busqueda = [];
+
 
 
 
@@ -35,19 +35,8 @@ function Busqueda() {
     if(inputTexto.length > 0){
     	FiltraPorTexto(inputTexto);
     }
-     
-    if(inputFecha.length > 0){
-
-    }
-    if(inputPrecio.length > 0){
-    	
-    }
-    if(inputLugar.length > 0){
-    	
-    }
-
-    if((inputTexto.length + inputFecha.length + inputPrecio.length + inputLugar.length) == 0){
-    	MuestraTodos();
+    else{
+		MuestraTodos();
     }
 }
 
@@ -59,6 +48,7 @@ function MuestraTodos(){
 }
 
 function FiltraPorTexto(inputTexto){
+	var busqueda = [];
 	for(let i = 0; i < eventos.length; ++i){
 		if(eventos[i].toLowerCase().includes(inputTexto.toLowerCase())){
 			busqueda.push(eventos[i]);
